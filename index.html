@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Sweet Luxury Blog - Recetas exclusivas de pastelería fina">
+    <meta name="keywords" content="pasteles, recetas, postres, galletas, chocolate, repostería">
+    <title>Sweet Luxury Blog | Recetas Exclusivas de Pastelería</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3 shadow sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 fw-bold" href="#">
+                <img src="assets/images/Logo_sweet.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                Sweet Luxury
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#pasteles">Pasteles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galletas">Galletas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#postres-frios">Postres Fríos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chocolate">Chocolate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INTRODUCCION -->
+    <section id="introduccion" class="container-fluid bg-black text-white py-5">
+    <div class="container py-5">
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col-12 col-lg-6 text-center mb-4 order-lg-2">
+                <img src="assets/images/plato.png" alt="imagen de plato con cubiertos" class="img-fluid shadow-lg rounded-3" style="max-height: 450px; object-fit: cover;">
+            </div>
+
+            <div class="col-12 col-lg-6 order-lg-1">
+                <h1 class="display-4 fw-light text-center text-lg-start mb-4">
+                    Bienvenidos!
+                </h1>
+                
+                <p class="lead fw-normal mb-4 text-justify">
+                    Bienvenido a Sweet Luxury, un lugar donde la elegancia y el sabor se encuentran. Aquí celebramos el arte de la gastronomía a través de recetas cuidadosamente seleccionadas, creadas para inspirar momentos especiales en tu mesa.
+                </p>
+
+                <p class="fw-light text-secondary text-justify">
+                    Cada plato es una invitación a disfrutar de la cocina como una experiencia única, llena de aromas, texturas y tradición. Permítenos acompañarte en este recorrido por sabores exquisitos y presentaciones refinadas que harán de cada preparación un deleite.
+                </p>
+                
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+                <!-- ========================= PASTELES ========================= -->
+                <section id="pasteles" class="mt-5">
+                    <h1 class="display-5 fw-bold mb-4">Pasteles</h1>
+                    <div class="row g-4">
+
+                        <!-- Red Velvet -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/red velvet.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Pastel Red Velvet">
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h4">Pastel Red Velvet</h2>
+                                    <p class="card-text flex-grow-1">Clásico sedoso con un betún de queso crema impecable.</p>
+                                    <button class="btn btn-outline-light mt-auto" data-bs-toggle="modal" data-bs-target="#redVelvetModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Pastel de Fresas -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/pastel fresas.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Pastel de Fresas">
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h4">Pastel de Fresas</h2>
+                                    <p class="card-text flex-grow-1">Capas ligeras de bizcocho y fresas frescas.</p>
+                                    <button class="btn btn-outline-light mt-auto" data-bs-toggle="modal" data-bs-target="#fresasModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Pastel Chocolate Oscuro -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/pastel chocolate oscuro.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Pastel Chocolate Oscuro">
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h4">Pastel de Chocolate Oscuro</h2>
+                                    <p class="card-text flex-grow-1">Intenso, con miga húmeda y ganache brillante.</p>
+                                    <button class="btn btn-outline-light mt-auto" data-bs-toggle="modal" data-bs-target="#chocoModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ========================= GALLETAS ========================= -->
+                <section id="galletas" class="mt-5">
+                    <h2 class="display-5 fw-bold mb-4">Galletas</h2>
+                    <div class="row g-4">
+
+                        <!-- Chocolate Chips Deluxe -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/galletas chocolate.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Chocolate Chips">
+                                <div class="card-body">
+                                    <h3 class="card-title">Chocolate Chips Deluxe</h3>
+                                    <p class="card-text">Crujientes por fuera, suaves por dentro.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#chipsModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Galletas de Mantequilla -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/galletas mantequilla.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Galletas de Mantequilla">
+                                <div class="card-body">
+                                    <h3 class="card-title">Galletas de Mantequilla</h3>
+                                    <p class="card-text">Delicadas, perfectas con té.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#manteModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Galletas con Almendra -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/galletas almendras.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Galletas con Almendra">
+                                <div class="card-body">
+                                    <h3 class="card-title">Galletas con Almendra</h3>
+                                    <p class="card-text">Textura y sabor elegante.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#almendraModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ========================= POSTRES FRÍOS ========================= -->
+                <section id="postres-frios" class="mt-5">
+                    <h2 class="display-5 fw-bold mb-4">Postres Fríos</h2>
+                    <div class="row g-4">
+
+                        <!-- Tiramisú -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/tiramisu.webp" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Tiramisu">
+                                <div class="card-body">
+                                    <h3 class="card-title">Tiramisú Clásico</h3>
+                                    <p class="card-text">Capas de café y crema mascarpone aireada.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#tiramisuModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Mousse -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/mousse.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Mousse">
+                                <div class="card-body">
+                                    <h3 class="card-title">Mousse de Chocolate</h3>
+                                    <p class="card-text">Ligera, aireada y con intenso chocolate.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#mousseModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Cheesecake -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/cheescake.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Cheesecake">
+                                <div class="card-body">
+                                    <h3 class="card-title">Cheesecake Frío</h3>
+                                    <p class="card-text">Textura sedosa y base crujiente.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#cheeseModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ========================= CHOCOLATE ========================= -->
+                <section id="chocolate" class="mt-5 mb-5">
+                    <h2 class="display-5 fw-bold mb-4">Chocolate</h2>
+                    <div class="row g-4">
+
+                        <!-- Trufas -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/trufas.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Trufas">
+                                <div class="card-body">
+                                    <h3 class="card-title">Trufas de Cacao</h3>
+                                    <p class="card-text">Bocado fino, textura cremosa.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#trufaModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Brownies -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/brownie.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Brownie">
+                                <div class="card-body">
+                                    <h3 class="card-title">Brownies Premium</h3>
+                                    <p class="card-text">Densos, fudgy y con corte perfecto.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#brownieModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Fondant -->
+                        <article class="col-12 col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light shadow h-100">
+                                <img src="assets/images/fondant.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Fondant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fondant de Chocolate</h3>
+                                    <p class="card-text">Centro líquido y textura celestial.</p>
+                                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#fondantModal">Ver receta</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+        </div>
+    </div>
+    
+    <!--================== CONTACTANOS =============-->
+    <section id="contacto" class="container-fluid bg-black text-white py-5">
+    <div class="container py-5">
+        
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="display-5 fw-light text-white mb-3">Contáctanos</h2>
+                <p class="lead fw-light text-secondary">
+                    Estamos listos para atenderte y escuchar tus sugerencias!
+                </p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center text-center">
+            
+            <div class="col-12 col-md-4 mb-4">
+                <i class="fas fa-map-marker-alt fa-2x mb-3 contact-icon"></i>
+                <h3 class="h5 fw-normal">Integrantes</h3>
+                <p class="fw-light"> Pérez Ramírez Ángel Andrey</p>
+                <p class="fw-light">López González Diego Emiliano</p>
+                <p class="fw-light">Ramírez Morales Gustavo</p>
+                <p class="fw-light">Sánchez Castillo Alonso Emanuel</p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-4">
+                <i class="fas fa-phone fa-2x mb-3 contact-icon"></i>
+                <h3 class="h5 fw-normal">Grupo</h3>
+                <p class="fw-light">1509</p>
+ 
+            </div>
+            
+            <div class="col-12 col-md-4 mb-4">
+                <i class="fas fa-envelope fa-2x mb-3 contact-icon"></i>
+                <h3 class="h5 fw-normal">Profesora</h3>
+                <p class="fw-light">MARIA ELENA ORTIZ JIMENEZ</p>
+            </div>
+
+        </div>
+
+    </div>
+ 	</section>
+
+
+
+    <!--================== MODALES =============-->
+
+    <!-- ===== Pastel Red Velvet ===== -->
+    <div class="modal fade" id="redVelvetModal" tabindex="-1" aria-labelledby="redVelvetModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="redVelvetModalLabel">Pastel Red Velvet</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/red velvet.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Red Velvet">
+                    <p class="mb-1"><strong>Porciones:</strong> 10–12</p>
+                    <p class="mb-1"><strong>Tiempo total:</strong> 1 h 10 min (15 min preparación + 40–45 min horneado + enfriado)</p>
+
+                    <h6 class="mt-3">Ingredientes</h6>
+                    <ul>
+                        <li>2 ½ tazas (320 g) de harina de trigo</li>
+                        <li>2 cucharadas de cacao en polvo sin azúcar</li>
+                        <li>1 ½ tazas (300 g) de azúcar</li>
+                        <li>1 tsp bicarbonato de sodio</li>
+                        <li>1 tsp sal</li>
+                        <li>2 huevos grandes</li>
+                        <li>1 taza (240 ml) de buttermilk</li>
+                        <li>120 ml de aceite vegetal</li>
+                        <li>2 cucharadas de colorante rojo (líquido o en gel)</li>
+                        <li>1 tsp vinagre blanco</li>
+                        <li>1 tsp extracto de vainilla</li>
+                        <li>Para el betún: 400 g queso crema, 120 g mantequilla, 300 g azúcar glass, 1 tsp vainilla</li>
+                    </ul>
+
+                    <h6>Preparación (paso a paso)</h6>
+                    <ol>
+                        <li>Precalienta el horno a 180°C. Engrasa y enharina dos moldes de 20–22 cm.</li>
+                        <li>Tamiza la harina con el cacao, bicarbonato y sal. Reserva.</li>
+                        <li>En un bol grande bate el aceite con el azúcar; añade los huevos uno a uno.</li>
+                        <li>Agrega buttermilk, colorante, vinagre y vainilla. Mezcla hasta integrar.</li>
+                        <li>Incorpora los ingredientes secos con movimientos suaves hasta obtener una mezcla homogénea.</li>
+                        <li>Divide entre los moldes y hornea 40–45 min o hasta que al insertar un palillo salga limpio.</li>
+                        <li>Enfría 15 min en molde, desmolda y deja enfriar completamente antes de glasear.</li>
+                        <li>Para el betún, bate el queso crema con mantequilla hasta cremoso; añade azúcar glass y vainilla. Decora.</li>
+                    </ol>
+
+                    <h6>Tips del chef</h6>
+                    <ul>
+                        <li>Usa colorante en gel para un rojo intenso sin alterar la textura.</li>
+                        <li>No sobrebatas la mezcla una vez añadida la harina.</li>
+                        <li>El betún se trabaja mejor con el pastel bien frío.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Pastel de Fresas ===== -->
+    <div class="modal fade" id="fresasModal" tabindex="-1" aria-labelledby="fresasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="fresasModalLabel">Pastel de Fresas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/pastel fresas.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Pastel de Fresas">
+                    <p class="mb-1"><strong>Porciones:</strong> 8–10</p>
+                    <p class="mb-1"><strong>Tiempo total:</strong> 1 h 20 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>Bizcocho: 3 huevos, 150 g azúcar, 120 g harina, 1 tsp polvo para hornear, 1 tsp esencia de vainilla</li>
+                        <li>Relleno: 600 g fresas frescas laminadas</li>
+                        <li>Crema: 400 ml crema para batir, 80 g azúcar glass, 1 tsp vainilla</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Prepara un bizcocho esponjoso y deja enfriar completamente.</li>
+                        <li>Bate la crema con azúcar y vainilla hasta picos suaves.</li>
+                        <li>Corta el bizcocho en capas, humedece si lo deseas con almíbar ligero.</li>
+                        <li>Rellena con crema y fresas laminadas; cubre y decora con más fresas.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Usa fresas maduras pero firmes para evitar exceso de humedad.</li>
+                        <li>Refrigera mínimo 2 horas antes de servir para que compacte.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Pastel Chocolate Oscuro ===== -->
+    <div class="modal fade" id="chocoModal" tabindex="-1" aria-labelledby="chocoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="chocoModalLabel">Pastel de Chocolate Oscuro</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/pastel chocolate oscuro.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Pastel Chocolate Oscuro">
+                    <p class="mb-1"><strong>Porciones:</strong> 10</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 1 h 10 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>200 g chocolate 70%</li>
+                        <li>180 g mantequilla</li>
+                        <li>250 g azúcar</li>
+                        <li>4 huevos</li>
+                        <li>150 g harina</li>
+                        <li>30 g cacao en polvo</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Precalentar a 180°C. Fundir chocolate con mantequilla al baño María.</li>
+                        <li>Batir huevos con azúcar hasta blanquear.</li>
+                        <li>Incorporar el chocolate fundido y tamizar harina con cacao.</li>
+                        <li>Hornear 30–35 min dependiendo del molde para obtener miga húmeda.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Para ganache brillante, añade 100 ml de crema caliente al chocolate picado y mezcla hasta emulsionar.</li>
+                        <li>Permite reposar 15 min antes de desmoldar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Chocolate Chips Deluxe ===== -->
+    <div class="modal fade" id="chipsModal" tabindex="-1" aria-labelledby="chipsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="chipsModalLabel">Chocolate Chips Deluxe</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/galletas chocolate.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Galletas Chocolate Chips">
+                    <p class="mb-1"><strong>Porciones:</strong> 24 galletas</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 35 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>225 g mantequilla a temperatura ambiente</li>
+                        <li>200 g azúcar morena</li>
+                        <li>100 g azúcar blanca</li>
+                        <li>2 huevos</li>
+                        <li>1 tsp esencia vainilla</li>
+                        <li>350 g harina</li>
+                        <li>1 tsp bicarbonato</li>
+                        <li>200 g chispas de chocolate</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Precalentar el horno a 180°C.</li>
+                        <li>Batir mantequilla con azúcares hasta cremoso; añadir huevos y vainilla.</li>
+                        <li>Incorporar harina y bicarbonato. Mezclar y añadir chispas.</li>
+                        <li>Formar porciones sobre bandeja y hornear 10–12 min.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Si quieres centro más suave, retira las galletas justo cuando los bordes estén dorados.</li>
+                        <li>Usa azúcar morena para humedad y sabor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Galletas de Mantequilla ===== -->
+    <div class="modal fade" id="manteModal" tabindex="-1" aria-labelledby="manteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="manteModalLabel">Galletas de Mantequilla</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/galletas mantequilla.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Galletas de Mantequilla">
+                    <p class="mb-1"><strong>Porciones:</strong> 30 galletas</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 40 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>250 g mantequilla fría</li>
+                        <li>120 g azúcar glass</li>
+                        <li>320 g harina</li>
+                        <li>1 pizca de sal</li>
+                        <li>1 tsp extracto de vainilla</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Cortar la mantequilla en cubos y mezclar con azúcar hasta textura arenosa.</li>
+                        <li>Añadir la harina, la vainilla y unir hasta formar masa. Refrigerar 30 min.</li>
+                        <li>Formar discos o cortar con cortadores y hornear 10–12 min a 170°C.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Masa fría = galletas más definidas.</li>
+                        <li>Espolvorea azúcar glass al final para presentación.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Galletas con Almendra ===== -->
+    <div class="modal fade" id="almendraModal" tabindex="-1" aria-labelledby="almendraModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="almendraModalLabel">Galletas con Almendra</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/galletas almendras.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Galletas con Almendra">
+                    <p class="mb-1"><strong>Porciones:</strong> 24</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 45 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>200 g harina</li>
+                        <li>100 g almendras molidas</li>
+                        <li>150 g mantequilla</li>
+                        <li>120 g azúcar</li>
+                        <li>1 huevo</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Batir mantequilla con azúcar hasta cremoso, añadir huevo.</li>
+                        <li>Incorporar harina y almendras molidas.</li>
+                        <li>Formar bolitas o discos y hornear 12–15 min a 175°C.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Usa almendras naturales tostadas para mayor aroma.</li>
+                        <li>Deja enfriar sobre reja para que queden crujientes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Tiramisú ===== -->
+    <div class="modal fade" id="tiramisuModal" tabindex="-1" aria-labelledby="tiramisuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="tiramisuModalLabel">Tiramisú Clásico</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/tiramisu.webp" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Tiramisú">
+                    <p class="mb-1"><strong>Porciones:</strong> 8</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 4 h (incluye reposo)</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>400 g queso mascarpone</li>
+                        <li>4 huevos (separadas las claras)</li>
+                        <li>100 g azúcar</li>
+                        <li>300 ml café fuerte frío</li>
+                        <li>200 g bizcochos (savoiardi)</li>
+                        <li>Cacao en polvo para espolvorear</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Batir yemas con azúcar hasta espeso; añadir mascarpone y mezclar.</li>
+                        <li>Batir claras a punto de nieve e incorporar con movimientos envolventes.</li>
+                        <li>Sumergir brevemente los bizcochos en café y formar capas alternadas con la crema.</li>
+                        <li>Refrigerar mínimo 3 horas. Antes de servir, espolvorear cacao.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>No empapes demasiado los bizcochos para evitar textura aguada.</li>
+                        <li>Prepara 1 día antes para mejor desarrollo de sabores.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Mousse de Chocolate ===== -->
+    <div class="modal fade" id="mousseModal" tabindex="-1" aria-labelledby="mousseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="mousseModalLabel">Mousse de Chocolate</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mousse.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Mousse">
+                    <p class="mb-1"><strong>Porciones:</strong> 6</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 2 h</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>300 g chocolate negro (70%)</li>
+                        <li>400 ml crema para batir</li>
+                        <li>4 claras</li>
+                        <li>50 g azúcar</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Fundir el chocolate y dejar atemperar.</li>
+                        <li>Batir la crema a picos suaves y reservar.</li>
+                        <li>Batir claras con azúcar a punto de nieve e incorporar al chocolate con movimientos envolventes.</li>
+                        <li>Agregar la crema batida cuidadosamente. Refrigerar 2 horas.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Evita mezclar vigorosamente para no perder aire.</li>
+                        <li>Sirve en copas frías para mejor textura.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Cheesecake Frío ===== -->
+    <div class="modal fade" id="cheeseModal" tabindex="-1" aria-labelledby="cheeseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="cheeseModalLabel">Cheesecake Frío</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/cheescake.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Cheesecake">
+                    <p class="mb-1"><strong>Porciones:</strong> 8–10</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 4 h (incluye refrigeración)</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>200 g galletas Digestive (trituradas)</li>
+                        <li>80 g mantequilla derretida</li>
+                        <li>600 g queso crema</li>
+                        <li>150 g azúcar</li>
+                        <li>200 ml crema para batir</li>
+                        <li>Ralladura de limón (opcional)</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Mezclar galletas trituradas con mantequilla y presionar en la base de un molde desmontable.</li>
+                        <li>Bate el queso crema con azúcar hasta suave; incorpora crema montada y ralladura.</li>
+                        <li>Verter sobre la base y refrigerar mínimo 4 horas (mejor toda la noche).</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Compacta bien la base para que no se desmorone.</li>
+                        <li>Decora con coulis de frutos rojos para contraste.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Trufas de Cacao ===== -->
+    <div class="modal fade" id="trufaModal" tabindex="-1" aria-labelledby="trufaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="trufaModalLabel">Trufas de Cacao</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/trufas.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Trufas">
+                    <p class="mb-1"><strong>Porciones:</strong> 20–24</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 1 h (incluye reposo)</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>300 g chocolate negro</li>
+                        <li>150 ml crema para batir</li>
+                        <li>30 g mantequilla</li>
+                        <li>Cacao en polvo para rebozar</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Calentar la crema hasta casi hervir y verter sobre el chocolate troceado.</li>
+                        <li>Dejar reposar 2 min y mezclar hasta emulsionar; añadir mantequilla.</li>
+                        <li>Refrigerar hasta que la mezcla compacte; formar bolitas y rebozar en cacao.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Usa chocolate de buena calidad para mejor textura y sabor.</li>
+                        <li>Refrigera ligeramente antes de servir para mantener la forma.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Brownies Premium ===== -->
+    <div class="modal fade" id="brownieModal" tabindex="-1" aria-labelledby="brownieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="brownieModalLabel">Brownies Premium</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/brownie.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Brownie">
+                    <p class="mb-1"><strong>Porciones:</strong> 9–12</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 50 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>250 g chocolate negro</li>
+                        <li>200 g mantequilla</li>
+                        <li>300 g azúcar</li>
+                        <li>4 huevos</li>
+                        <li>120 g harina</li>
+                        <li>1 tsp sal</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Fundir chocolate y mantequilla al baño María.</li>
+                        <li>Batir huevos con azúcar hasta esponjar y unir al chocolate.</li>
+                        <li>Añadir harina tamizada y mezclar.</li>
+                        <li>Hornear 25–30 min para textura fudgy.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Para un centro más líquido, reduce tiempo de horneado 3–5 min.</li>
+                        <li>Enfría completamente antes de cortar para rebanadas limpias.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Fondant de Chocolate ===== -->
+    <div class="modal fade" id="fondantModal" tabindex="-1" aria-labelledby="fondantModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3" id="fondantModalLabel">Fondant de Chocolate</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/fondant.jpg" width="800" height="700" class="img-fluid rounded mb-3 d-block mx-auto" alt="Fondant">
+                    <p class="mb-1"><strong>Porciones:</strong> 6</p>
+                    <p class="mb-1"><strong>Tiempo:</strong> 45 min</p>
+
+                    <h6>Ingredientes</h6>
+                    <ul>
+                        <li>200 g chocolate negro</li>
+                        <li>150 g mantequilla</li>
+                        <li>4 huevos</li>
+                        <li>100 g azúcar</li>
+                        <li>50 g harina</li>
+                    </ul>
+
+                    <h6>Preparación</h6>
+                    <ol>
+                        <li>Fundir el chocolate con mantequilla.</li>
+                        <li>Batir huevos y azúcar, añadir chocolate y la harina tamizada.</li>
+                        <li>Hornear en moldes individuales 8–10 min para obtener centro líquido.</li>
+                    </ol>
+
+                    <h6>Tips</h6>
+                    <ul>
+                        <li>Sirve caliente acompañado de helado de vainilla.</li>
+                        <li>Utiliza moldes engrasados para desmoldar fácilmente.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

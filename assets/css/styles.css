@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f;
+    color: #f0e8dc;
+    font-family: "Playfair Display", serif;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 20px 60px;
+    border-bottom: 1px solid #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.8em;
+    color: #deb887;
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f3e5c9;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d6b48c;
+}
+
+/* --- LAYOUT --- */
+.container {
+    display: flex;
+    padding: 0;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    width: 250px;
+    background: #111;
+    padding: 30px 25px;
+    border-right: 1px solid #2a2a2a;
+    height: 100vh;
+    position: sticky;
+    top: 90px;
+}
+
+.sidebar h2 {
+    color: #d6b48c;
+    font-family: "Great Vibes", cursive;
+    font-size: 2.4em;
+    margin-bottom: 25px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #f3e5c9;
+    display: block;
+    padding: 12px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #2a2a2a;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #d6b48c;
+}
+
+/* --- CONTENT --- */
+.content {
+    padding: 50px;
+    flex-grow: 1;
+}
+
+.category-title {
+    font-size: 2.8em;
+    font-family: "Great Vibes", cursive;
+    color: #d6b48c;
+    margin-bottom: 25px;
+}
+
+/* --- CARD GRID --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+/* --- CARD --- */
+.card {
+    background: #141414;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    padding-bottom: 20px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.card h3 {
+    color: #d6b48c;
+    margin: 15px;
+    font-size: 1.35em;
+}
+
+.card p {
+    margin: 0 15px 15px;
+    color: #dfd7c3;
+    font-size: 0.95em;
+}
+
+/* --- BUTTON INSIDE CARD --- */
+.card .btn {
+    background-color: #d6b48c !important;
+    color: #1a1a1a !important;
+    font-weight: 700;
+    border: none;
+    margin: 10px 15px 0;
+    transition: 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #b8926e !important;
+    transform: translateY(-3px);
+}
+
+/* --- MODAL --- */
+.modal-content {
+    background: #141414 !important;
+    color: #f0e8dc !important;
+    border: 1px solid #333;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #2a2a2a;
+}
+
+.modal-title {
+    font-family: "Great Vibes", cursive;
+    color: #d6b48c;
+    font-size: 2.2em;
+}
+
+.modal-body img {
+    border-radius: 12px;
+}
+
+.btn-warning {
+    background-color: #d6b48c !important;
+    color: #1a1a1a !important;
+    font-weight: 700;
+}
+
+.btn-warning:hover {
+    background-color: #b8926e !important;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- DROPDOWN / SUBMENU (tema oscuro) --- */
+.dropdown-menu.bg-black {
+    background: #111 !important;
+    border: 1px solid #2a2a2a;
+}
+
+.dropdown-menu.bg-black .dropdown-item {
+    color: #f3e5c9;
+}
+
+.dropdown-menu.bg-black .dropdown-item:hover,
+.dropdown-menu.bg-black .dropdown-item:focus {
+    color: #1a1a1a;
+    background-color: #d6b48c;
+}
+
+/* ensure nested submenus are positioned and match theme */
+.dropend > .dropdown-menu {
+    margin-left: .125rem;
+}
+
+/* small spacing for nested lists */
+.dropdown-menu .dropdown-item.dropend {
+    position: relative;
+}
+
+/*INTRODUCCION*/
+/* 1. Tipografía: Usar una fuente Serif para la elegancia (ej: Playfair Display) */
+.display-4 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* 2. Párrafos: Usar una fuente Sans-serif limpia y ligera */
+#introduccion p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+/* 3. Estilo del Párrafo Secundario (text-secondary) */
+#introduccion .text-secondary {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* 4. Estilo de la Imagen y Contenedor (SIN BORDE) */
+#introduccion .img-fluid {
+    /* Ahora no hay borde, solo la transición para efectos de hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 5. Efecto Hover (opcional pero muy elegante) */
+#introduccion .img-fluid:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 6. Mejorar el Contraste del Contenedor Negro */
+.bg-black {
+    background-color: #1a1a1a !important;
+}
+
+/* --- ESTILOS PARA LA SECCIÓN DE CONTACTO --- */
+
+/* Alineación con la tipografía Montserrat */
+#contacto .form-label,
+#contacto .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* Estilo para los campos de entrada de Bootstrap */
+#contacto .form-control {
+    background-color: #222222; /* Fondo de campo ligeramente más claro que el fondo de la sección */
+    color: #f0f0f0; /* Texto de entrada en blanco suave */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+    border-radius: 0; /* Bordes rectos, que se ven más elegantes */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Foco en el campo (al hacer click) */
+#contacto .form-control:focus {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #f0f0f0; /* Borde se vuelve más visible al enfocar */
+    box-shadow: none; /* Quitamos la sombra azul por defecto de Bootstrap */
+}
+
+/* Estilo para el botón de envío */
+#contacto .btn-outline-light {
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+}
+
+#contacto .btn-outline-light:hover {
+    background-color: #f0f0f0; /* Fondo blanco al pasar el ratón */
+    color: #1a1a1a; /* Texto negro al pasar el ratón */
+    border-color: #f0f0f0;
+}
+
